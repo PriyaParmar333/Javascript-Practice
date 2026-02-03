@@ -1,0 +1,28 @@
+let todo=[];
+let req=prompt("Please enter your request");
+console.log(req);
+
+while(true)
+{
+    if(req == "quit"){
+        console.log("YOU ARE QUITING THE APP")
+        break;
+    }
+    if(req == "list")
+{
+    console.log("----------------------------")
+    for(task of todo)
+    {
+        console.log(task);
+    }
+    console.log("------------------------");
+}
+    else if(req == "add")
+    {
+        let task=prompt("Please Enter the task you want to add")
+        todo.push(task);
+        console.log("Task added")
+    }
+    prompt("Please enter your request");
+}
+
