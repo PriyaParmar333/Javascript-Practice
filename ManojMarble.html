@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manoj Marble Calculator</title>
+    <link rel="stylesheet" href="ManojMarble.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="title">
+        <h1>Manoj Marble Calculator</h1>
+        <p>Granite & Marble Area and Price Estimator</p>
+    </div>
+
+    <div class="card">
+
+        <div class="field">
+            <label>Material Name</label>
+            <input id="name" placeholder="e.g. French Brown">
+        </div>
+
+        <div class="grid">
+            <div class="field">
+                <label>Length (inches)</label>
+                <input type="number" id="num1">
+            </div>
+
+            <div class="field">
+                <label>Width (inches)</label>
+                <input type="number" id="num2">
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="field">
+                <label>Number of Items</label>
+                <input type="number" id="items">
+            </div>
+
+            <div class="field">
+                <label>Price per Sq Ft</label>
+                <input type="number" id="price">
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="field">
+                <label>Total Area (Sq Ft)</label>
+                <input id="feet" readonly>
+            </div>
+
+            <div class="field">
+                <label>Total Price</label>
+                <input id="totalPrice" readonly>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="btn primary" onclick="calculate()">Calculate</button>
+            <button class="btn danger" onclick="resetForm()">Reset</button>
+        </div>
+
+    </div>
+</div>
+
+<script src="ManojMarble.js"></script>
+</body>
+</html>
